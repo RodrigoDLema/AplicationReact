@@ -12,6 +12,7 @@ pipeline {
             steps {
                 bat 'npm install pm2 -g'
                 bat 'npm install'
+                bat 'npm install --global pm2@latest'
             }
         }
         stage('Test') {
