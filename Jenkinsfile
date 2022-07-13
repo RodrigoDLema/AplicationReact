@@ -22,7 +22,7 @@ pipeline {
                 }
                 stage('Deliver') {
                             steps {
-                                bat 'pm2 start src\\App.js --name myapp'
+                                bat './node_modules/pm2/bin/pm2 start src\\App.js --name myapp'
 
                             }
                         }
